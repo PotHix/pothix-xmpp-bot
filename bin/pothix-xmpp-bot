@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+#
+# Stub executable for pothix-xmpp-bot
+#
+
+require File.expand_path('../../config/environment',  __FILE__)
+
+DaemonKit::Application.exec( DAEMON_ROOT + '/libexec/pothix-xmpp-bot-daemon.rb' )
